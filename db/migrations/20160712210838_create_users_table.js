@@ -3,8 +3,8 @@ exports.up = function(knex, Promise) {
     table.increments();
     table.string('name');
   });
-};
-
-exports.down = function(knex, Promise) {
+ };
+ 
+ exports.down = function(knex, Promise) {
   return knex.schema.dropTable('users');
-};
+ };
