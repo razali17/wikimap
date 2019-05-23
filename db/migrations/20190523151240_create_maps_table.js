@@ -4,7 +4,7 @@ exports.up = function(knex, Promise) {
     table.string('title').notNullable();
     table.float('lattitude').notNullable();
     table.float('longitude').notNullable();
-    // table.foreign('poi_id').references('id').inTable('pois');
+    table.foreign('poi_id').references('id').inTable('pois');
     table.timestamps();
   })
 };
